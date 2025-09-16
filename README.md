@@ -1,14 +1,9 @@
-Of course. Here is the complete documentation formatted as a `README.md` file. You can copy the entire content below and paste it directly into your `README.md` file on GitHub.
-
------
-
 # Slide Generator API
 
 ## Overview
 
 This project is a Python-based backend application that generates customizable presentation slides on any topic. It leverages a Large Language Model (Google's Gemini) for content creation and provides a robust, asynchronous API built with FastAPI. The final output is a downloadable Microsoft PowerPoint (`.pptx`) file.
 
-This application fulfills all core requirements of the take-home assignment, including AI content generation, multiple slide layouts, custom styling, and `.pptx` export. It also implements several stretch goals such as request/response validation, error handling, rate limiting, caching, and efficient handling of concurrent requests.
 
 **Key Technologies:**
 
@@ -83,7 +78,7 @@ Follow these steps to set up and run the project locally.
         GOOGLE_API_KEY="YOUR_API_KEY_HERE"
         ```
 
-5.  **Prepare Presentation Templates**
+5.  **Prepare Presentation Templates (Already present in the repo, no need to do it)**
 
       * This project uses separate templates for different aspect ratios to ensure correct formatting.
       * Create two PowerPoint template files in the project's root directory:
@@ -95,7 +90,7 @@ Follow these steps to set up and run the project locally.
 
       * Use Uvicorn to run the FastAPI server:
         ```bash
-        uvicorn src.main:app --reload
+        python -m uvicorn src.main:app --reload
         ```
       * The `--reload` flag enables hot-reloading for development.
 
